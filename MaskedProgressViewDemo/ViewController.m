@@ -24,7 +24,6 @@
     
     _progressView = [[JKPointProgressView alloc] initWithPointNumber:14];
     _progressView.frame = CGRectMake(40, 100, SCREEN_WIDTH-80, 20);
-
     
     [_progressView setProgressedNumberOfPoint:0];
         

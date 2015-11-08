@@ -11,15 +11,15 @@
 
 @interface JKPointProgressView :UIView
 
-@property (nonatomic, assign) NSInteger numberOfPoint;
+@property (nonatomic, assign) NSInteger numberOfPoint;//总点数
 
-@property (nonatomic, assign) CGFloat RadiusOfPoint;
+@property (nonatomic, assign) CGFloat RadiusOfPoint;//圆点的半径
 
-@property (nonatomic, strong) UIColor *progressedColor;
+@property (nonatomic, strong) UIColor *progressedColor;//progress tint 进度颜色
 
-@property (nonatomic, strong) UIColor *unProgressedColor;
+@property (nonatomic, strong) UIColor *unProgressedColor;//track tint 默认颜色
 
-@property (nonatomic, assign) NSInteger progressedNumberOfPoint;
+@property (nonatomic, assign) NSInteger progressedNumberOfPoint;//进度点数
 
 - (instancetype)initWithPointNumber:(NSInteger)number;
 
