@@ -1,0 +1,7 @@
+
+Build/
+DerivedData/
+*.pbxuser
+*.xcuserstate
+xcuserdata
+*.xccheckout
