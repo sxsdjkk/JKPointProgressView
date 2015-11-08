@@ -4,15 +4,12 @@
 
 使用方法很简单
 
-###1.创建初始化
+###1.初始化
 _progressView = [[JKPointProgressView alloc] initWithPointNumber:14];//总点数
-_progressView.frame = CGRectMake(40, 100, SCREEN_WIDTH-80, 20);
 
 ###2.设置当前的点数
 [_progressView setProgressedNumberOfPoint:0];
 
-###3.addSubView
-[self.view addSubview:_progressView];
 
 ##还有其它属性可以设置
 
