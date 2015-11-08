@@ -1,7 +1,12 @@
-
 Build/
 DerivedData/
 *.pbxuser
 *.xcuserstate
 xcuserdata
 *.xccheckout
+project.xcworkspace
+xcuserdata
+UserInterfaceState.xcuserstate
+project.xcworkspace/
+xcuserdata/
+UserInterface.xcuserstate
