@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5252CC8B1BEE530E00045C48 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5252CC8A1BEE530E00045C48 /* 6.jpg */; };
-		5252CC8D1BEE550D00045C48 /* 点.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5252CC8C1BEE550D00045C48 /* 点.jpg */; };
 		CE3D870E1BECA15C00833C89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D870D1BECA15C00833C89 /* main.m */; };
 		CE3D87111BECA15C00833C89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D87101BECA15C00833C89 /* AppDelegate.m */; };
 		CE3D87141BECA15C00833C89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D87131BECA15C00833C89 /* ViewController.m */; };
@@ -38,8 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5252CC8A1BEE530E00045C48 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
-		5252CC8C1BEE550D00045C48 /* 点.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "点.jpg"; sourceTree = "<group>"; };
 		CE3D87091BECA15C00833C89 /* MaskedProgressViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaskedProgressViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3D870D1BECA15C00833C89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE3D870F1BECA15C00833C89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,8 +113,6 @@
 				CE3D87151BECA15C00833C89 /* Main.storyboard */,
 				CE3D87181BECA15C00833C89 /* Assets.xcassets */,
 				CE3D871A1BECA15C00833C89 /* LaunchScreen.storyboard */,
-				5252CC8A1BEE530E00045C48 /* 6.jpg */,
-				5252CC8C1BEE550D00045C48 /* 点.jpg */,
 				CE3D871D1BECA15C00833C89 /* Info.plist */,
 				CE3D870C1BECA15C00833C89 /* Supporting Files */,
 			);
@@ -256,9 +250,7 @@
 			files = (
 				CE3D871C1BECA15C00833C89 /* LaunchScreen.storyboard in Resources */,
 				CE3D87191BECA15C00833C89 /* Assets.xcassets in Resources */,
-				5252CC8B1BEE530E00045C48 /* 6.jpg in Resources */,
 				CE3D87171BECA15C00833C89 /* Main.storyboard in Resources */,
-				5252CC8D1BEE550D00045C48 /* 点.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
