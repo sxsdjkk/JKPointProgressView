@@ -35,6 +35,8 @@
     UISlider *slider = (UISlider *)sender;
     
     [_progressView setProgressedNumberOfPoint:slider.value*14];
+  
+    NSLog(@"--%d",(int)(slider.value*14));
 }
 
 

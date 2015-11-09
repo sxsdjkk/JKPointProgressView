@@ -29,7 +29,9 @@
     if (self) {
         
         _numberOfPoint = number;
-        
+      
+        self.backgroundColor = [UIColor clearColor];
+      
     }
     return self;
 }
@@ -68,7 +70,7 @@
     
     _progressedView.backgroundColor = _progressedColor;
     
-    [self addSubview:_progressedView];
+    [_unProgressedView addSubview:_progressedView];
     
     [self drawCirclesWithRect:rect];
 }
@@ -79,30 +81,32 @@
     
     CGFloat width = size.width;
     
-    CGFloat interval = (width-_RadiusOfPoint*2)/_numberOfPoint;
+    CGFloat interval = (width-_RadiusOfPoint*2)/(_numberOfPoint-1);
     
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-    [shapeLayer setFillColor:[[UIColor whiteColor] CGColor]];
+  
+    [shapeLayer setFillColor:[[UIColor blueColor] CGColor]];
+  
     CGMutablePathRef path = CGPathCreateMutable();
     
     for (int i = 0; i< _numberOfPoint; i++) {
         
         CGPathMoveToPoint(path, NULL, i*interval+_RadiusOfPoint, size.height/2);
-        CGPathAddArc(path, NULL, i*interval+_RadiusOfPoint, size.height/2, _RadiusOfPoint, -M_PI*2, 0.0, YES);
+//        CGPathAddArc(path, NULL, (i*interval+_RadiusOfPoint), size.height/2, (_RadiusOfPoint), -M_PI*2, 0.0, YES);
+      CGPathAddArc(path, NULL, (i*interval+_RadiusOfPoint), size.height/2.0, (float)_RadiusOfPoint, M_PI*2, 0, YES);
         CGPathCloseSubpath(path);
     }
     
     [shapeLayer setPath:path];
     CFRelease(path);
-    self.layer.mask = shapeLayer;
+    _unProgressedView.layer.mask = shapeLayer;
 }
 
 #pragma mark- overwrite setter
-
 - (void)setProgressedNumberOfPoint:(NSInteger)point;
 {
-    _numberOfPoint = point;
-    _progressedView.frame = CGRectMake(0, 0, (self.frame.size.width-_RadiusOfPoint*2)/_numberOfPoint*point, self.frame.size.height);
+    _progressedNumberOfPoint = point;
+    _progressedView.frame = CGRectMake(0, 0, (self.frame.size.width-_RadiusOfPoint*2)/(_numberOfPoint-1)*point, self.frame.size.height);
 }
 
 - (void)setUnProgressedColor:(UIColor *)unProgressedColor {
